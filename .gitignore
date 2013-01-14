@@ -21,3 +21,6 @@
 # ?
 /.settings
 
+# log files created when jvm crashes
+/hs_err_pid*.log
+
