@@ -11,6 +11,7 @@ object AprikotCombinatorBuild extends Build {
   ).settings(StandardProject.newSettings :_*
   ).settings(
     Seq(
+      fork := true,
       libraryDependencies ++= Seq(
         "net.java.dev.jna" % "jna" % "3.5.+"),
       version := "0.0.1-SNAPSHOT"
