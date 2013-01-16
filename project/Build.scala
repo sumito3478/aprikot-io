@@ -3,7 +3,7 @@ import Keys._
 
 import info.sumito3478.aprikot.sbt._
 
-object AprikotCombinatorBuild extends Build {
+object build extends Build {
 
   lazy val project = Project(
     id = "aprikot-io",
@@ -11,10 +11,9 @@ object AprikotCombinatorBuild extends Build {
   ).settings(StandardProject.newSettings :_*
   ).settings(
     Seq(
-      fork := true,
       libraryDependencies ++= Seq(
         "net.java.dev.jna" % "jna" % "3.5.+"),
-      version := "0.0.1"
+      version := "0.0.2"
     ): _*
   )
 
